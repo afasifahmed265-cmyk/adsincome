@@ -579,7 +579,7 @@
                 <p style="font-size: 14px; margin-bottom: 10px;">Share your referral link and get 7500 BONK for each friend!</p>
                 <div class="referral-link-container">
                     <input type="text" id="referral-link" readonly>
-                    <button id="copy-referral" onclick="copyReferralLink(https://t.me/task_pay_bot/app?openapp=265)">Copy</button>
+                    <button id="copy-referral" onclick="copyReferralLink()">Copy</button>
                 </div>
             </div>
             
@@ -615,7 +615,7 @@
                 <p style="font-size: 14px; margin-bottom: 10px;">Share your referral link and get 7500 BONK for each friend!</p>
                 <div class="referral-link-container">
                     <input type="text" id="referral-link-earn" readonly>
-                    <button id="copy-referral-earn" onclick="copyReferralLink(https://t.me/task_pay_bot/app?openapp=265)">Copy</button>
+                    <button id="copy-referral-earn" onclick="copyReferralLink()">Copy</button>
                 </div>
             </div>
             
@@ -740,7 +740,7 @@
         // Initialize the app
         function initApp() {
             // Check for referral in URL
-            checkReferral(https://t.me/task_pay_bot/app?openapp=265);
+            checkReferral();
             
             // Set user info
             document.getElementById('user-id').textContent = userId;
@@ -752,7 +752,7 @@
             checkAdReady();
             
             // Generate referral link
-            generateReferralLink(https://t.me/task_pay_bot/app?openapp=265);
+            generateReferralLink();
         }
 
         // Function to show pages
@@ -817,7 +817,7 @@
         }
 
         // Generate referral link
-        function generateReferralLink() {
+        function generateReferralLink(https://t.me/task_pay_bot/app?openapp=265) {
             const currentUrl = window.location.href.split('?')[0];
             const referralLink = `${currentUrl}?ref=${userId}`;
             document.getElementById('referral-link').value = referralLink;
@@ -1154,6 +1154,7 @@
     </script>
 </body>
 </html>
+
 
 
 
