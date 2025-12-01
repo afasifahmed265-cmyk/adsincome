@@ -524,14 +524,14 @@
             <div class="progress-container">
                 <div class="progress-header">
                     <h3>Today's Progress</h3>
-                    <span id="ads-progress">0/50000</span>
+                    <span id="ads-progress">0/50</span>
                 </div>
                 <div class="progress-bar">
                     <div class="progress-fill" id="progress-fill"></div>
                 </div>
                 <div class="progress-text">
                     <span>0 BONK</span>
-                    <span>50,000 BONK</span>
+                    <span>5000 BONK</span>
                 </div>
             </div>
             
@@ -585,7 +585,7 @@
             
             <div class="rate-info">
                 <p><i class="fas fa-ad"></i> Per Ad = 250 BONK</p>
-                <p><i class="fas fa-money-bill-wave"></i> Minimum Withdrawal: 50,00 BONK</p>
+                <p><i class="fas fa-money-bill-wave"></i> Minimum Withdrawal: 5000 BONK</p>
                 <p><i class="fas fa-gift"></i> Referral Bonus: 7500 BONK per user</p>
             </div>
         </div>
@@ -657,7 +657,7 @@
             </div>
             
             <div class="rate-info">
-                <p><i class="fas fa-money-bill-wave"></i> Minimum Withdrawal: 50,00 BONK</p>
+                <p><i class="fas fa-money-bill-wave"></i> Minimum Withdrawal: 5000 BONK</p>
                 <p><i class="fas fa-clock"></i> Withdrawal Processing Time: 24-48 hours</p>
             </div>
         </div>
@@ -720,7 +720,7 @@
     <script>
         // Constants
         const POINTS_PER_AD = 250; // 250 BONK per ad
-        const MIN_WITHDRAW_BONK = 50000; // Minimum withdrawal 50,000 BONK
+        const MIN_WITHDRAW_BONK = 5000; // Minimum withdrawal 5000 BONK
         const REFERRAL_BONUS = 7500; // Referral bonus 7500 BONK
         
         // Telegram Bot Configuration
@@ -954,7 +954,7 @@
                     document.getElementById('watch-ad-btn-earn').disabled = false;
                     
                     if (isAutoMode) {
-                        setTimeout(watchAd, 10000); // Retry after 10 seconds
+                        setTimeout(watchAd, 100); // Retry after 10 seconds
                     }
                 });
             } catch (error) {
@@ -1154,6 +1154,7 @@
     </script>
 </body>
 </html>
+
 
 
 
